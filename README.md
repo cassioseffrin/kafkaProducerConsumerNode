@@ -3,7 +3,7 @@
 nodemon e sucrase  para ES6
 
 
-
+```
 iniciaKafka.sh
 echo "indo para o diretorio do kafka..."
 cd /home/cassio/kafka_2.13-2.7.0/
@@ -20,4 +20,4 @@ echo "descrevendo topico1..."
 #bin/kafka-console-producer.sh --topic topico1 --bootstrap-server localhost:9092 &
 #pra receber manualmente
 #bin/kafka-console-consumer.sh --topic topico1 --from-beginning --bootstrap-server localhost:9092
- 
+ ```
