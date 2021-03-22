@@ -1,0 +1,17 @@
+{
+  "name": "kafkaclient",
+  "version": "1.0.0",
+  "description": "kafka client",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/servidor.js"
+  },
+  "author": "Cassio",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "kafkajs": "^1.15.0",
+    "nodemon": "^2.0.7",
+    "sucrase": "^3.17.1"
+  }
+}

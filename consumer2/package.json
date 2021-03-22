@@ -1,0 +1,15 @@
+{
+  "name": "consumer2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+    "scripts": {
+    "dev": "sucrase-node src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kafkajs": "^1.15.0",
+    "sucrase": "^3.17.1"
+  }
+}
