@@ -1,6 +1,6 @@
 import express from 'express';
-const app = express();
-app.post('/teste', (req,res) =>{
-    return res.json({ok:true});
+const servidor = express();
+servidor.get('/teste', (req,res) =>{
+    return res.json({salvo:'seu registro foi salvo'});
 }); 
-app.listen(80);
+servidor.listen(80);

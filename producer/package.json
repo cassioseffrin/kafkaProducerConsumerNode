@@ -2,7 +2,7 @@
   "name": "kafkaclient",
   "version": "1.0.0",
   "description": "kafka client",
-  "main": "index.js",
+  "main": "nodemon src/socket.js",
   "scripts": {
     "dev": "nodemon src/servidor.js"
   },

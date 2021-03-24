@@ -3,24 +3,18 @@ import { CompressionTypes } from 'kafkajs';
 
 const routes = express.Router();
 
-routes.post('/enviarMensagem', async (req, res) => {
-  const message = {
-    user: { id: 1, name: 'Cassio Seffrin' },
-    course: 'Kafka com Node.js',
-    grade: 10,
-  };
- 
+routes.post('/enviarMensagem', async (request, respose) => {
 
-  await req.producer.connect();
-  await req.producer.send({
+  await request.producer.connect();
+  await request.producer.send({
     topic: 'topico1',
     messages: [
-      { value: 'Hello Cassio!' },
+      { value: 'teste3!' },
     ],
   });
-  await req.producer.disconnect();
+  await request.producer.disconnect();
 
-  return res.json({ ok: true });
+  return respose.json({ ok: true });
 });
 
 export default routes;
