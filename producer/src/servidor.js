@@ -4,7 +4,6 @@ import routes from './rotas';
  
 var app = express();
 app.use(express.json());
- 
 
 /**
  * conecta no Kafka

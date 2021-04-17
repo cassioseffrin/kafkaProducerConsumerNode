@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
     "scripts": {
-    "dev": "sucrase-node src/index.js"
+    "dev": "sucrase-node src/index.js",
+    "start": "pm2 start ./node_modules/sucrase/bin/sucrase-node --name consumer2 -- ./src/index.js" 
   },
   "author": "",
   "license": "ISC",

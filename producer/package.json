@@ -4,7 +4,8 @@
   "description": "kafka client",
   "main": "nodemon src/socket.js",
   "scripts": {
-    "dev": "nodemon src/servidor.js"
+    "dev": "nodemon src/servidor.js",
+    "start": "pm2 start ./node_modules/sucrase/bin/sucrase-node --name producer -- ./src/servidor.js" 
   },
   "author": "Cassio",
   "license": "ISC",
