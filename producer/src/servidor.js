@@ -8,7 +8,7 @@ const app = express();
  */
 const kafka = new Kafka({
   clientId: 'api',
-  brokers: ['thebull:9092'],
+  brokers: ['3.137.198.93:9092'],
   logLevel: logLevel.WARN,
   retry: {
     initialRetryTime: 200,
