@@ -1,13 +1,18 @@
 import express from 'express';
 import { Kafka, logLevel } from 'kafkajs';
 import routes from './rotas';
-const app = express();
+ 
+var app = express();
+app.use(express.json());
+ 
 
 /**
  * conecta no Kafka
  */
 const kafka = new Kafka({
   clientId: 'api',
+  // brokers: ['ec2-3-137-198-93.us-east-2.compute.amazonaws.com:9092'],
+  // brokers: ['3.137.198.93:9092'],
   brokers: ['localhost:9092'],
   logLevel: logLevel.WARN,
   retry: {
@@ -21,7 +26,7 @@ const producer = kafka.producer();
 /**
  * adiciona o producer para todas rotas
  */
-app.use((req, res, next) => {
+app.use((req  , res, next) => {
   req.producer = producer;
   return next();
 })
